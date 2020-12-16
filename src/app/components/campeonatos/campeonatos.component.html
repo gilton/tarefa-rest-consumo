@@ -1,0 +1,25 @@
+<div>
+    <table border="1">
+        <tr style="font-weight: bold;">
+            <td>Nome</td>
+            <td>Nome Popular</td>
+            <td>Fase Atual</td>
+            <td>Status</td>
+        </tr>
+        <tr *ngFor="let campeonato of lista">
+            <td>
+                {{campeonato.nome}}
+            </td>
+            <td>
+                {{campeonato.edicao_atual.nome_popular}}
+            </td>
+            <td>
+                {{campeonato.fase_atual.nome}}
+            </td>
+            <td>
+                {{campeonato.status}}
+            </td>
+            
+        </tr>
+    </table>
+</div>
